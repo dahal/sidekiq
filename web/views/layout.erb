@@ -4,19 +4,10 @@
     <title><%= environment_title_prefix %><%= Sidekiq::NAME %></title>
     <meta charset="utf8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-
-    <link href="<%= root_path %>stylesheets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
-    <% if rtl? %>
-    <link href="<%= root_path %>stylesheets/bootstrap-rtl.min.css" media="screen" rel="stylesheet" type="text/css"/>
-    <% end %>
-
-    <link href="<%= root_path %>stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" />
-    <% if rtl? %>
-    <link href="<%= root_path %>stylesheets/application-rtl.css" media="screen" rel="stylesheet" type="text/css" />
-    <% end %>
-
-    <link rel="shortcut icon" type="image/ico" href="<%= root_path %>images/favicon.ico" />
-    <script type="text/javascript" src="<%= root_path %>javascripts/application.js"></script>
+    <link href='https://s3.amazonaws.com/sidekiq-assets/5-0/bootstrap.css' media="screen" rel="stylesheet" type="text/css" />
+    <link href='https://s3.amazonaws.com/sidekiq-assets/5-0/application.css' media="screen" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" type="image/ico" href='https://s3.amazonaws.com/sidekiq-assets/5-0/favicon.ico' />
+    <script type="text/javascript" src='https://s3.amazonaws.com/sidekiq-assets/5-0/application.js'></script>
     <meta name="google" content="notranslate" />
     <%= display_custom_head %>
   </head>
